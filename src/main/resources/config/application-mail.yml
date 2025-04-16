@@ -1,0 +1,12 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${JAVA_EMAIL:default@example.com}       # Fallback to dummy email if env var not set
+    password: ${JAVA_EMAIL_PASSWORD:defaultpassword}  # Fallback to dummy password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

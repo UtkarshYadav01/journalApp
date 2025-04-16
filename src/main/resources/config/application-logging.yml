@@ -1,0 +1,18 @@
+#logging:
+#   level:
+#     net:
+#       engineeringdigest:
+#         journalApp:
+#           service:
+#             UserService: trace
+
+#logging:
+#  level:
+#    net:
+#      engineeringdigest:
+#        journalApp: error
+
+# Common config (optional)
+logging:
+  level:
+    root: INFO

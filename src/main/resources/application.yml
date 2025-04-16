@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active:
+      - ansi
+#      - logging
+      - atlas-uy
+      - weather-api
+      - mail
+      - redis-cloud
+      - kafka
+
+  config:
+    additional-location: classpath:config/
+
+server:
+  port: 8080

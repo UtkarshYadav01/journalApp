@@ -1,7 +1,6 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://comic13358:s95CdUefwaQ8bqdk@cluster0.xslrl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      uri: ${ATLAS_URI}
       auto-index-creation: true
       database: journaldb
-

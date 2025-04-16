@@ -1,8 +1,8 @@
 spring:
   redis:
-    host: redis-16561.crce182.ap-south-1-1.ec2.redns.redis-cloud.com
+    host: ${REDIS_HOST}
     port: 16561
-    password: OtA3ch3B3clAfxgnf9htBRmSWJknyJR1
+    password: ${REDIS_PASSWORD}
 #      database: 0
 #      timeout: 0
 #      pool:

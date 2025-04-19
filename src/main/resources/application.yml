@@ -7,7 +7,7 @@ spring:
       - weather-api
       - mail
       - redis-cloud
-      - kafka
+      - redpanda-cloud
 
   config:
     additional-location: classpath:config/

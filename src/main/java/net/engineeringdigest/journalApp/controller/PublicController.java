@@ -44,11 +44,11 @@ public class PublicController {
     }*/
     @Operation(summary = "Step 2: Sign Up", tags = {"Authentication"},
             description = """
-                       ✍️ Register a new user.
+                        ✍️ Register a new user.
                     
-                       ➤ Provide a username, email, and password.
-                       ➤ Optionally, set `sentimentAnalysis` to `true` if you want to receive emails tailored to your sentiment analysis.
-                       ➤ This is the first step before logging in.
+                        ➤ Provide a username, email, and password.
+                        ➤ Optionally, set `sentimentAnalysis` to `true` if you want to receive emails tailored to your sentiment analysis.
+                        ➤ This is the first step before logging in.
                     """)
     @PostMapping("/signup")
     public void signup(@RequestBody UserDTO user) {

@@ -24,11 +24,11 @@ public class JournalApplication {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(JournalApplication.class, args);
-        log.error("hahahhahhahahahah");
+        /*log.error("hahahhahhahahahah");
         log.warn("hahahhahhahahahah");
         log.info("hahahhahhahahahah");
         log.debug("hahahhahhahahahah");
-        log.trace("hahahhahhahahahah");
+        log.trace("hahahhahhahahahah");*/
         /*ConfigurableEnvironment environment = context.getEnvironment();
         log.error(Arrays.toString(environment.getActiveProfiles()));*/
     }

@@ -1,11 +1,9 @@
 package net.engineeringdigest.journalApp.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import net.engineeringdigest.journalApp.cache.AppCache;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-//import io.swagger.v3.oas.annotations.tags.Tag;
-//import net.engineeringdigest.journalApp.cache.AppCache;
 import net.engineeringdigest.journalApp.entity.User;
 import net.engineeringdigest.journalApp.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +15,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/admin")
-//@Tag(name = "Admin APIs")
+@Tag(name = "Admin APIs")
 public class AdminController {
 
     @Autowired
@@ -43,6 +41,6 @@ public class AdminController {
 
     @GetMapping("clear-app-cache")
     public void clearAppCache() {
-         appCache.init();
+        appCache.init();
     }
 }
